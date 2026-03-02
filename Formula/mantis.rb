@@ -5,21 +5,21 @@
 class Mantis < Formula
   desc "Local-first codebase intelligence engine — dependency graph, LLM context, architecture lint"
   homepage "https://github.com/seedhire/mantis"
-  version "0.3.5"
+  version "0.3.6"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/seedhire/mantis/releases/download/v0.3.5/mantis_darwin_amd64.tar.gz"
-    sha256 "c510e79af98eb579637cf5d48c366ab86e6facdf4f0cd427a94963c93258a7fb"
+    url "https://github.com/seedhire/mantis/releases/download/v0.3.6/mantis_darwin_amd64.tar.gz"
+    sha256 "14ace2b5d4c8afb82eb507480af617cc64c0fe54641829b27709b030717497c5"
 
     define_method(:install) do
       bin.install "mantis"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/seedhire/mantis/releases/download/v0.3.5/mantis_darwin_arm64.tar.gz"
-    sha256 "56218a24dcb93db9024ddfc23579e146a2197f298f528bc0e96686400856ddd6"
+    url "https://github.com/seedhire/mantis/releases/download/v0.3.6/mantis_darwin_arm64.tar.gz"
+    sha256 "b0d7ace13be655a9b1b9ad999479f80400dbabe2879507531576c8c5093d38ed"
 
     define_method(:install) do
       bin.install "mantis"
