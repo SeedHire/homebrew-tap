@@ -11,7 +11,7 @@ class Mantis < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/seedhire/mantis/releases/download/v0.5.9/mantis_darwin_amd64.tar.gz"
-    sha256 "5a169d9f82e1e956447e329c6769142590c8c0e230f20c016d11842df113d3a5"
+    sha256 "a156d8cf161af1283d1ea27f5fc42dca6a1ff2d716f215203713e017af9b2623"
 
     define_method(:install) do
       bin.install "mantis"
@@ -19,7 +19,7 @@ class Mantis < Formula
   end
   if Hardware::CPU.arm?
     url "https://github.com/seedhire/mantis/releases/download/v0.5.9/mantis_darwin_arm64.tar.gz"
-    sha256 "d2adc91a98e9c089ec88407c0cfe0f0ddfa2830a96633eb64781ea9ace1e0fb5"
+    sha256 "c6514646922606e2bb140cfd96347c0651c1fcd7c406111429189a00ecd7f848"
 
     define_method(:install) do
       bin.install "mantis"
